@@ -32,8 +32,8 @@
         .text-container {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            margin-right: 500px; /* 根據需要調整值 */
+            align-items: center;
+            margin-right: 450px; /* 根據需要調整值 */
             padding: 20px; /* 增加填充 */
             box-sizing: border-box; /* 確保填充包含在元素的總寬度和高度內 */
         }
@@ -43,12 +43,30 @@
             user-select: none;
             text-align: center;
             width: 100%;
-            margin: 20px auto; /* 增加邊距 */
+            margin: 120px auto 0; /* 增加邊距 */
         }
         .large-text img {
             width: 100%; /* 確保 SVG 填滿容器 */
             height: 100%; /* 確保 SVG 填滿容器 */
             object-fit: contain; /* 確保 SVG 適應其容器 */
+        }
+        .button-container {
+            margin-top: 20px; /* 增加按鈕上方的邊距 */
+            text-align: center;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: rgba(59, 158, 198, 0.78); /* 綠色背景 */
+            color: white; /* 白色文字 */
+            border: none; /* 無邊框 */
+            border-radius: 5px; /* 圓角 */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 陰影 */
+            transition: background-color 0.3s ease; /* 背景色過渡 */
+        }
+        .button-container button:hover {
+            background-color: #7f09ed; /* 懸停時的背景色 */
         }
     </style>
 </head>
@@ -57,6 +75,9 @@
     <div class="text-container">
         <div class="large-text">
             <img src="web/svg_design.svg" alt="網頁異常">
+        </div>
+        <div class="button-container">
+            <button onclick="window.location.href='https://genshin.hoyoverse.com/zh-tw'">主頁</button>
         </div>
     </div>
 </div>
