@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>genshin wait web</title>
+    <style>
+        /* 使照片剛好契合網頁不用滑動 ，讓照片當背景*/
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .background {
+            width: 100%;
+            height: 100%;
+            background: url('web/照片1.jpg') no-repeat center center;
+            background-size: cover;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+            font-size: 40px; /* 設置字體大小 */
+            opacity: 1;
+            font-family: Georgia, sans-serif; /* 設置字體 */
+            text-align: center; /* 設置文字對齊 */
+            padding-left: 300px; /* 調整左邊距 */
+            position: relative; /* 設置相對定位 */
+        }
+        .logo {
+            position: absolute;
+            top: 10px; /* 距離頂部10px */
+            left: 10px; /* 距離左側10px */
+            max-width: 100px; /* 設置最大寬度 */
+            height: auto; /* 自動調整高度 */
+        }
+    </style>
+</head>
+<body>
+<div class="background">
+    <img src="web/原神.png" alt="Logo" class="logo">
+    前方的道路堵住了<br>
+    之後再來探索吧
+</div>
+</body>
+</html>
