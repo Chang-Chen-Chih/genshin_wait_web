@@ -1,0 +1,22 @@
+<svg width="400" height="250" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#70a6ff;stop-opacity:1" />  <!-- 淡藍色 -->
+      <stop offset="50%" style="stop-color:#f4e4b5;stop-opacity:1" /> <!-- 金色 -->
+      <stop offset="100%" style="stop-color:#6e91b1;stop-opacity:1" /> <!-- 深藍色 -->
+    </linearGradient>
+  </defs>
+  <text x="50%" y="30%" font-family="'HanYi WenHei', sans-serif" font-size="60" font-weight="bold" fill="url(#gradient1)"
+    stroke="white" stroke-width="1" text-anchor="middle" dominant-baseline="middle">
+    網頁異常
+  </text>
+  <text x="50%" y="55%" font-family="Arial, sans-serif" font-size="35" font-weight="bold" fill="white" stroke="#f4e4b5" stroke-width="1" text-anchor="middle" dominant-baseline="middle">
+    前方的道路堵住了
+  </text>
+  <text x="50%" y="70%" font-family="Arial, sans-serif" font-size="35" font-weight="bold" fill="white" stroke="#f4e4b5" stroke-width="1" text-anchor="middle" dominant-baseline="middle">
+    稍微休息一下
+  </text>
+  <text x="50%" y="85%" font-family="Arial, sans-serif" font-size="35" font-weight="bold" fill="white" stroke="#f4e4b5" stroke-width="1" text-anchor="middle" dominant-baseline="middle">
+    之後再來探索吧
+  </text>
+</svg>

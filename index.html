@@ -8,6 +8,7 @@
             height: 100%;
             margin: 0;
             padding: 0;
+            overflow: hidden; /* 防止滾動 */
         }
         body {
             display: flex;
@@ -32,27 +33,22 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            margin-right: 500px; /* Adjust the value as needed */
-            /*增加邊框*/
-            border: 2px solid white;
-            /*邊框顏色*/
-            border-color: cadetblue;
-            /*邊框跟文字距離*/
-            padding: 10px;
-
+            margin-right: 500px; /* 根據需要調整值 */
+            padding: 20px; /* 增加填充 */
+            box-sizing: border-box; /* 確保填充包含在元素的總寬度和高度內 */
         }
         .large-text {
-            font-size: 60px; /* Large font size */
-            font-family: 'Courier', sans-serif; /* Change font */
+            font-size: 60px;
+            font-family: 'Courier', sans-serif;
             user-select: none;
-            text-align: center; /* Center the text */
-            width: 100%; /* Ensure the text element takes full width */
-            margin: 0 auto; /* Center the element within its container */
+            text-align: center;
+            width: 100%;
+            margin: 20px auto; /* 增加邊距 */
         }
-        .small-text {
-            font-size: 30px; /* Smaller font size */
-            user-select: none;
-            margin-top: 0px; /* Adjust margin as needed */
+        .large-text img {
+            width: 100%; /* 確保 SVG 填滿容器 */
+            height: 100%; /* 確保 SVG 填滿容器 */
+            object-fit: contain; /* 確保 SVG 適應其容器 */
         }
     </style>
 </head>
@@ -60,9 +56,8 @@
 <div class="background">
     <div class="text-container">
         <div class="large-text">
-            <img src="web/gradient_text.svg" alt="網頁異常">
+            <img src="web/svg_design.svg" alt="網頁異常">
         </div>
-        <div class="small-text">前方的道路堵住了<br>稍微休息一下，之後再來探索吧</div>
     </div>
 </div>
 </body>
