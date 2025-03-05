@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <title>genshin wait web</title>
     <style>
-        /* 使照片剛好契合網頁不用滑動 ，讓照片當背景*/
         html, body {
             height: 100%;
             margin: 0;
@@ -21,31 +20,50 @@
             background: url('web/照片1.jpg') no-repeat center center;
             background-size: cover;
             display: flex;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
             color: white;
-            font-size: 40px; /* 設置字體大小 */
-            opacity: 1;
-            font-family: Georgia, sans-serif; /* 設置字體 */
-            text-align: center; /* 設置文字對齊 */
-            padding-left: 300px; /* 調整左邊距 */
-            position: relative; /* 設置相對定位 */
+            font-family: Georgia, sans-serif;
+            text-align: center;
+            position: relative;
+            user-select: none;
         }
-        .logo {
-            position: absolute;
-            top: 10px; /* 距離頂部10px */
-            left: 10px; /* 距離左側10px */
-            max-width: 100px; /* 設置最大寬度 */
-            height: auto; /* 自動調整高度 */
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-right: 500px; /* Adjust the value as needed */
+            /*增加邊框*/
+            border: 2px solid white;
+            /*邊框顏色*/
+            border-color: cadetblue;
+            /*邊框跟文字距離*/
+            padding: 10px;
+
+        }
+        .large-text {
+            font-size: 60px; /* Large font size */
+            font-family: 'Courier', sans-serif; /* Change font */
+            user-select: none;
+            text-align: center; /* Center the text */
+            width: 100%; /* Ensure the text element takes full width */
+            margin: 0 auto; /* Center the element within its container */
+        }
+        .small-text {
+            font-size: 30px; /* Smaller font size */
+            user-select: none;
+            margin-top: 0px; /* Adjust margin as needed */
         }
     </style>
 </head>
 <body>
 <div class="background">
-    <img src="web/原神.png" alt="Logo" class="logo">
-    <span class="large-text">網頁異常</span><br> <!--    將標題變大-->
-    前方的道路堵住了<br>
-    之後再來探索吧
+    <div class="text-container">
+        <div class="large-text">
+            <img src="web/gradient_text.svg" alt="網頁異常">
+        </div>
+        <div class="small-text">前方的道路堵住了<br>稍微休息一下，之後再來探索吧</div>
+    </div>
 </div>
 </body>
 </html>
